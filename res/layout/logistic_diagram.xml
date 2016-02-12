@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+  <!--android:background="#ffffff"-->
+
+  <lsl.local.chaosneuron.graphics.TwoDimGraph
+    android:id="@+id/logistic_graph_diagram"
+    android:layout_width="0dip"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    />
+
+  <LinearLayout
+    android:layout_width="0dip"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="3"
+      android:padding="5dip"
+      android:orientation="vertical"
+      >
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Year"
+        />
+      <EditText
+        android:id="@+id/et_num_years"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intial Value of xn"
+        />
+      <EditText
+        android:id="@+id/et_init_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Birth Rate"
+        />
+      <EditText
+        android:id="@+id/et_start_birth_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789.-"
+        />
+    </LinearLayout>
+
+    <!-- Button など -->
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:padding="10dip"
+      >
+      <Button
+        android:id="@+id/btn_run_logistic_diagram"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="RUN"
+        />
+    </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>

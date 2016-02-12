@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">ChaosNeuronActivity</string>
+
+  <string name="activ_logistic_name">Logistic Map</string>
+  <string name="activ_neuron_model">Neuron Model</string>
+</resources>

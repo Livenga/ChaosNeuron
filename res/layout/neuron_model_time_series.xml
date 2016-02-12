@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+  <!--android:background="#ffffff"-->
+
+  <lsl.local.chaosneuron.graphics.TwoDimGraph
+    android:id="@+id/neuron_model_graph_time"
+    android:layout_width="0dip"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    />
+
+  <LinearLayout
+    android:layout_width="0dip"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="3"
+      android:orientation="vertical"
+      android:padding="5dip"
+      >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Years"
+        />
+      <EditText
+        android:id="@+id/et_nm_num_times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:inputType="number"
+        />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Value of xn"
+        />
+      <EditText
+        android:id="@+id/et_nm_initial_value_xn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789.0"
+        />
+    </LinearLayout>
+
+
+    <!-- Button など -->
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:padding="10dip"
+      >
+      <Button
+        android:id="@+id/btn_run_neuron_model_time"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="RUN"
+        />
+    </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>
